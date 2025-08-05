@@ -1,0 +1,30 @@
+[project]
+name = "consumer-complaint-backend"
+version = "0.1.0"
+description = "Backend for Consumer Complaint Automation System"
+authors = [
+    { name = "Yonatan Gross", email = "yonatan2gross@gmail.com" }
+]
+requires-python = ">=3.12.10"
+dependencies = [
+    "fastapi>=0.115.12",
+    "uvicorn>=0.30.1",
+    "websockets>=12.0",
+    "langgraph>=0.6.0",
+    "langchain>=0.3.0", 
+    "playwright>=1.44.0",
+    "dependency-injector>=4.41.0",
+    "pydantic>=2.7.1",
+    "python-multipart>=0.0.9",
+    "anthropic>=0.25.6",
+    "openai>=1.30.1"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2.2"
+]
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"

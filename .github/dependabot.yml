@@ -1,0 +1,52 @@
+version: 2
+
+updates:
+  # Frontend dependencies
+  - package-ecosystem: "npm"
+    directory: "/frontend"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "yonatanp"
+    assignees:
+      - "yonatanp"
+    commit-message:
+      prefix: "frontend"
+      include: "scope"
+
+  # Backend dependencies  
+  - package-ecosystem: "pip"
+    directory: "/backend"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "yonatanp"
+    assignees:
+      - "yonatanp"
+    commit-message:
+      prefix: "backend"
+      include: "scope"
+
+  # Docker dependencies
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 3
+    reviewers:
+      - "yonatanp"
+    assignees:
+      - "yonatanp"
+
+  # GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 3
+    reviewers:
+      - "yonatanp"
+    assignees:
+      - "yonatanp"
