@@ -1,8 +1,11 @@
+name: consumer-complaint-system-dev
+
 services:
   frontend:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+    container_name: consumer-frontend
     ports:
       - "3010:3000"
     environment:
@@ -18,6 +21,7 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
+    container_name: consumer-backend
     ports:
       - "9876:8000"
     environment:
@@ -33,6 +37,7 @@ services:
 
   redis:
     image: redis:7-alpine
+    container_name: consumer-redis
     ports:
       - "6390:6379"
     volumes:

@@ -16,6 +16,7 @@ If you discover a security vulnerability, please follow these steps:
 4. Provide steps to reproduce if applicable
 
 We will:
+
 - Acknowledge receipt within 48 hours
 - Provide an initial assessment within 5 business days
 - Work with you to understand and resolve the issue

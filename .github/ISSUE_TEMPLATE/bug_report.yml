@@ -61,7 +61,7 @@ body:
         - OS: 
         - Browser: 
         - Node: 
-        - Python: 
+        - Python:
       render: markdown
     validations:
       required: true
