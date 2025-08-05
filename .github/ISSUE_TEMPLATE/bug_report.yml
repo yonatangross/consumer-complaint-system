@@ -3,7 +3,7 @@ description: Create a report to help us improve
 title: "[BUG]: "
 labels: ["bug", "triage"]
 assignees:
-  - yonatanp
+  - yonatangross
 
 body:
   - type: markdown

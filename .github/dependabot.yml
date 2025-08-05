@@ -8,9 +8,9 @@ updates:
       interval: "weekly"
     open-pull-requests-limit: 5
     reviewers:
-      - "yonatanp"
+      - "yonatangross"
     assignees:
-      - "yonatanp"
+      - "yonatangross"
     commit-message:
       prefix: "frontend"
       include: "scope"
@@ -22,9 +22,9 @@ updates:
       interval: "weekly"
     open-pull-requests-limit: 5
     reviewers:
-      - "yonatanp"
+      - "yonatangross"
     assignees:
-      - "yonatanp"
+      - "yonatangross"
     commit-message:
       prefix: "backend"
       include: "scope"
@@ -36,9 +36,9 @@ updates:
       interval: "weekly"
     open-pull-requests-limit: 3
     reviewers:
-      - "yonatanp"
+      - "yonatangross"
     assignees:
-      - "yonatanp"
+      - "yonatangross"
 
   # GitHub Actions
   - package-ecosystem: "github-actions"
@@ -47,6 +47,6 @@ updates:
       interval: "weekly"
     open-pull-requests-limit: 3
     reviewers:
-      - "yonatanp"
+      - "yonatangross"
     assignees:
-      - "yonatanp"
+      - "yonatangross"
