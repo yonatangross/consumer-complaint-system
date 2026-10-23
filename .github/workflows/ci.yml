@@ -7,13 +7,16 @@ on:
     branches: [main]
 
 env:
-  NODE_VERSION: "20"
+  NODE_VERSION: "22"
   PYTHON_VERSION: "3.12"
 
 jobs:
   security-scan:
     runs-on: ubuntu-latest
     name: Security Scan
+    permissions:
+      contents: read
+      security-events: write
     steps:
       - uses: actions/checkout@v7
 
@@ -44,7 +47,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: latest
+          version: 11
 
       - name: Install dependencies
         working-directory: ./frontend
@@ -89,7 +92,7 @@ jobs:
 
       - name: Install dependencies
         working-directory: ./backend
-        run: uv pip install --system .
+        run: uv pip install --system ".[dev]"
 
       - name: Run tests
         working-directory: ./backend
