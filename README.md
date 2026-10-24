@@ -18,6 +18,7 @@ docker-compose up -d
 
 - Backend: Python 3.11+, FastAPI, LangGraph, Playwright, uv, Poetry/pyproject.toml
 - Frontend: React, TypeScript, Node 20+
+- Routing: the frontend ships without a router. Add one (for example `react-router`) when the app needs more than one page.
 
 ## Project Structure
 
